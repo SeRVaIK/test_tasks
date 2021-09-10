@@ -1,0 +1,398 @@
+@import url(../fonts/stylesheet.css);
+@import url(./burger.css);
+@import url(./slider.css);
+
+/* @import url(./swiper-bundle.min.css); */
+
+
+/* Обнуление */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'stapel';
+    font-weight: 700;
+}
+
+
+/* h1 {
+    font-size: calc(38px + 16 * ((100vw - 320px) / (1920 - 320)));
+} */
+
+
+/* @media (min-width: 767px) {
+    h1 {
+        font-size: calc(72px + 16 * ((100vw - 320px) / (1920 - 320)));
+    }
+} */
+
+h2 {
+    font-size: 32px;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: 'ralewaymedium', 'ralewayregular', 'ralewaysemibold';
+}
+
+body.lock,
+body._lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+
+/* -------------------- */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1187px;
+    margin: 0px auto;
+    min-height: 72px;
+    padding: 16px 10px;
+    min-width: 0;
+}
+
+.menu__list {
+    padding: 0;
+}
+
+.menu__link {
+    font-size: 24px;
+    color: #000;
+}
+
+.page__section_container {
+    height: 530px;
+}
+
+
+/* -------------------- */
+
+@media (max-width:767px) {
+    h1 {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 16px;
+    }
+    .page__section_main {
+        padding-top: 64px;
+        background: url(../img/828_mobile2.png) 0 0/contain no-repeat;
+        background-position-y: 70%;
+    }
+    .page__section_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 12px;
+    }
+    .page__section_main-left {}
+    .page__section_main-right {
+        display: flex;
+        justify-content: center;
+    }
+    .popup {
+        background-color: #fff;
+    }
+    .popup__title {
+        font-size: 40px;
+        margin: 0px 0px 1em 0px;
+    }
+}
+
+@media (min-width:767px) {
+    h1 {
+        font-size: 72px;
+        line-height: 91px;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header__menu {
+        width: 100%;
+    }
+    .menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .menu__list>li {
+        line-height: 28px;
+        padding: 10px;
+    }
+    .page__section_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        min-width: 0;
+    }
+    .page__section_container,
+    .page__section_container_slider {
+        max-width: 1400px;
+        margin: auto;
+        margin-bottom: 120px;
+    }
+    .page__section_main {
+        height: 916px;
+        background: url(../img/828.png) 100%/auto 100% no-repeat;
+    }
+    .page__text {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .page__section_main-left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .page__title {
+        margin-bottom: 40px;
+    }
+    .page__text {
+        margin-bottom: 80px;
+    }
+    .page__sub-title {
+        padding-left: 120px;
+    }
+    .popup {
+        background-color: #E5E5E5;
+    }
+    .popup__content {
+        width: 680px;
+        height: 480px;
+    }
+    .popup__title {
+        font-size: 40px;
+    }
+}
+
+
+/* -------------------- */
+
+.header__menu {}
+
+.menu {}
+
+.menu__body {}
+
+
+/* -------------------- */
+
+.page {
+    padding: 72px 0px 30px 0px;
+}
+
+.page__section {}
+
+.page__section_container {}
+
+.page__title {}
+
+.page__text {}
+
+.page__btn {
+    font-size: 16px;
+    line-height: 19px;
+    background-color: inherit;
+    border: 1px solid #000;
+    padding: 12px 20px;
+    color: #000;
+}
+
+.popup-link {}
+
+.page__section_slider {
+    /* min-height: 800px; */
+}
+
+.page__sub-title {}
+
+.image-slider {}
+
+.swiper-container {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+.page__section_cards {}
+
+.image-slider-cards {}
+
+.cards__header {}
+
+.cards__arrows {}
+
+.cards__body {}
+
+.cards__img {}
+
+.cards__title {}
+
+.cards__descr {}
+
+.text {}
+
+
+/* -------------------- */
+
+.form {}
+
+.form__body {}
+
+.form__title {}
+
+.form__input {}
+
+.btn {}
+
+.btn-submit {}
+
+.btn-nosubmit {}
+
+
+/* -------------------- */
+
+.list__body {}
+
+.list__list {}
+
+.list__item {}
+
+.List__title {}
+
+
+/* -------------------- */
+
+.footer {}
+
+.footer__container {}
+
+.footer__menu {}
+
+
+/* -------------------- */
+
+
+/* -------------------- */
+
+body.lock header {
+    opacity: 0;
+}
+
+body header {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    /* Если в popup многабукав */
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Простой transition (анимация) */
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup__content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background-color: #fff;
+    color: #000;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+    /* Во имя анимации скрываем всё на свете */
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    /* Вроде как, более интересная анимация */
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
