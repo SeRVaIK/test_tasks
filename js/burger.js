@@ -1,6 +1,6 @@
 "use strict"
 //Проверка на touchscreen
-export const isMobile = {
+const isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
     },
@@ -44,8 +44,8 @@ if (isMobile.any()) {
 
 // Меню бургер
 
-export const iconMenu = document.querySelector('.menu__icon');
-export const menuBody = document.querySelector('.menu__body');
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.menu__body');
 if (iconMenu) {
     iconMenu.addEventListener("click", function(e) {
         document.body.classList.toggle('_lock');
@@ -56,7 +56,7 @@ if (iconMenu) {
 
 // Прокрутка при клике
 
-export const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
         menuLink.addEventListener("click", onMenuLinkClick);

@@ -1,16 +1,16 @@
 // Инициализируем Swiper
-export const swiper1 = new Swiper('.image-slider', {
+const swiper1 = new Swiper('.image-slider', {
     // Стрелки
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
     // Скролл
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        // Возможность перетаскивать скролл
-        draggable: true
-    },
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     // Возможность перетаскивать скролл
+    //     draggable: true
+    // },
     centeredSlides: true,
     // loop: true,
 

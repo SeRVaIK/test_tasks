@@ -1,7 +1,8 @@
 // получаем элементы с классом popup-link
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
-const lockPadding = document.querySelectorAll(".lock-padding");
+const lockPadding = document.querySelectorAll('.lock-padding');
+const swipers = document.querySelectorAll('.swiper-container')
 
 // избегаем двойных нажатий
 let unlock = true;
@@ -71,6 +72,10 @@ function bodyLock() {
 
     body.style.paddingRight = lockPaddingValue;
     body.classList.add('lock');
+    for (let index = 0; index < swipers.length; index++) {
+        swipers[index].classList.add('lock');
+    }
+    
 
     unlock = false;
     setTimeout(function() {
@@ -88,6 +93,9 @@ function bodyUnlock() {
         }
         body.style.paddingRight = '0px';
         body.classList.remove('lock');
+        for (let index = 0; index < swipers.length; index++) {
+            swipers[index].classList.remove('lock');
+        }
     }, timeout);
 
     unlock = false;

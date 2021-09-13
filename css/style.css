@@ -1,15 +1,7 @@
 @import url(../fonts/stylesheet.css);
-@import url(./burger.css);
-@import url(./slider.css);
-
-/* @import url(./swiper-bundle.min.css); */
-
-
 /* Обнуление */
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     padding: 0;
     margin: 0;
     border: 0;
@@ -20,27 +12,18 @@ a {
     text-decoration: none;
 }
 
-ul,
-ol,
-li {
+ul, ol, li {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'stapel';
     font-weight: 700;
 }
 
-
 /* h1 {
     font-size: calc(38px + 16 * ((100vw - 320px) / (1920 - 320)));
 } */
-
 
 /* @media (min-width: 767px) {
     h1 {
@@ -52,15 +35,13 @@ h2 {
     font-size: 32px;
 }
 
-html,
-body {
+html, body {
     height: 100%;
     line-height: 1;
     font-family: 'ralewaymedium', 'ralewayregular', 'ralewaysemibold';
 }
 
-body.lock,
-body._lock {
+body.lock, body._lock {
     overflow: hidden;
 }
 
@@ -68,7 +49,6 @@ body._lock {
     overflow: hidden;
     min-height: 100%;
 }
-
 
 /* -------------------- */
 
@@ -105,7 +85,6 @@ body._lock {
     height: 530px;
 }
 
-
 /* -------------------- */
 
 @media (max-width:767px) {
@@ -139,6 +118,12 @@ body._lock {
     }
 }
 
+/* ----------------- */
+
+/* Слайдер */
+
+/* ----------------- */
+
 @media (min-width:767px) {
     h1 {
         font-size: 72px;
@@ -168,8 +153,7 @@ body._lock {
         height: 100%;
         min-width: 0;
     }
-    .page__section_container,
-    .page__section_container_slider {
+    .page__section_container, .page__section_container_slider {
         max-width: 1400px;
         margin: auto;
         margin-bottom: 120px;
@@ -208,29 +192,11 @@ body._lock {
     }
 }
 
-
-/* -------------------- */
-
-.header__menu {}
-
-.menu {}
-
-.menu__body {}
-
-
 /* -------------------- */
 
 .page {
     padding: 72px 0px 30px 0px;
 }
-
-.page__section {}
-
-.page__section_container {}
-
-.page__title {}
-
-.page__text {}
 
 .page__btn {
     font-size: 16px;
@@ -241,94 +207,14 @@ body._lock {
     color: #000;
 }
 
-.popup-link {}
-
-.page__section_slider {
-    /* min-height: 800px; */
-}
-
-.page__sub-title {}
-
-.image-slider {}
-
-.swiper-container {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
-.swiper-button-prev {}
-
-.swiper-button-next {}
-
-.page__section_cards {}
-
-.image-slider-cards {}
-
-.cards__header {}
-
-.cards__arrows {}
-
-.cards__body {}
-
-.cards__img {}
-
-.cards__title {}
-
-.cards__descr {}
-
-.text {}
-
-
-/* -------------------- */
-
-.form {}
-
-.form__body {}
-
-.form__title {}
-
-.form__input {}
-
-.btn {}
-
-.btn-submit {}
-
-.btn-nosubmit {}
-
-
-/* -------------------- */
-
-.list__body {}
-
-.list__list {}
-
-.list__item {}
-
-.List__title {}
-
-
-/* -------------------- */
-
-.footer {}
-
-.footer__container {}
-
-.footer__menu {}
-
-
-/* -------------------- */
-
-
 /* -------------------- */
 
 body.lock header {
-    opacity: 0;
+    transform: translateY(-100%);
 }
 
 body header {
-    opacity: 1;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .popup {
