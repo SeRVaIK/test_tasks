@@ -28,7 +28,7 @@
     max-width: 100%;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.slider__button_custom {
     width: 48px;
     height: 48px;
     top: unset;
@@ -37,18 +37,20 @@
     color: #000000;
 }
 
-.swiper-button-prev:hover, .swiper-button-next:hover {
+.slider__button_custom:hover {
     color: #fff;
     background-color: #F63765;
     border: #F63765;
 }
 
-.swiper-button-prev:active, .swiper-button-next:active {
+
+.slider__button_custom:active {
     color: #fff;
     background-color: #AD0E35;
     border: #AD0E35;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
+
+.slider__button_custom:after {
     font-size: 14px;
 }

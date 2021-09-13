@@ -25,11 +25,11 @@
                     </div>
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li><a data-goto=".page__section_main" class="menu__link" href="#">Главная</a></li>
-                            <li><a data-goto=".page__section_slider" class="menu__link" href="#">Слайдер</a></li>
-                            <li><a data-goto=".page__section_cards" class="menu__link" href="#">Карточки</a></li>
-                            <li><a data-goto=".page__section_form" class="menu__link" href="#">Форма</a></li>
-                            <li><a data-goto=".page__section_list" class="menu__link" href="#">Список</a></li>
+                            <li><a data-goto=".main" class="menu__link" href="#">Главная</a></li>
+                            <li><a data-goto=".slider" class="menu__link" href="#">Слайдер</a></li>
+                            <li><a data-goto=".cards" class="menu__link" href="#">Карточки</a></li>
+                            <li><a data-goto=".form" class="menu__link" href="#">Форма</a></li>
+                            <li><a data-goto=".accordeon" class="menu__link" href="#">Список</a></li>
                             <li><a data-goto=".popup-link" class="menu__link" href="#">Модалка</a></li>
                         </ul>
                     </nav>
@@ -37,7 +37,7 @@
             </div>
         </header>
         <main class="page">
-            <section class="page__section_main">
+            <section class="main page__section_main">
                 <div class="page__section_container">
                     <div class="page__section_main-left">
                         <h1 class="page__title">GROWTASK</h1>
@@ -49,8 +49,8 @@
                 </div>
             </section>
             <!-- Слайдер -->
-            <section class="page__section_slider">
-                <div class="page__section_container_slider">
+            <section class="slider">
+                <div class="slider__container">
                     <h2 class="page__sub-title">Слайдер</h2>
                     <div class="image-slider swiper-container">
                         <!-- Обязательная оболочка -->
@@ -89,39 +89,34 @@
                             <!-- и так далее... -->
                         </div>
                         <!-- Добавляем, если нам нужны стрелки управления -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="slider__button_custom swiper-button-prev"></div>
+                        <div class="slider__button_custom swiper-button-next"></div>
                     </div>
                 </div>
             </section>
+
             <!-- Карточки -->
-            <section class="page__section_cards">
-                <div class="page__section_container_slider">
-                    <div class="image-slider-cards swiper-container">
-                        <div class="cards__header">
-                            <h2 class="page__sub-title">Карточки</h2>
-                            <div class="cards__arrows">
-                                <!-- <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div> -->
-                            </div>
-                        </div>
-                        <!-- Обязательная оболочка -->
-                        <div class="swiper-wrapper">
-                            <!-- Слайды -->
+
+            <section class="cards">
+                <div class="cards__container">
+                <h2 class="page__sub-title">Карточки</h2>
+                    <div class="cards-slider swiper-container">
+                        <div class="cards-slider__wrapper swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="cards__body">
                                     <div class="cards__img">
-                                        <img src="./img/logo.svg" alt="logo.svg">
+                                        <img src="./img/big_logo.svg" alt="logo.svg">
                                     </div>
                                     <h3 class="cards__title">Услуга 1 Услуга 1</h3>
-                                    <span class="cards__descr">Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание</span>
+                                    <span class="cards__descr">Описание Описание Описание Описание Описание
+                                        ОписаниеОписание Описание Описание</span>
                                     <button href="#popup" class="page__btn popup-link">Модальное окно</button>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="cards__body">
                                     <div class="cards__img">
-                                        <img src="./img/logo.svg" alt="logo.svg">
+                                        <img src="./img/big_logo.svg" alt="logo.svg">
                                     </div>
                                     <h3 class="cards__title">Услуга 2 Услуга 2Услуга 2 Услуга 2 </h3>
                                     <span class="cards__descr text">Описание Описание Описание Описание </span>
@@ -131,17 +126,70 @@
                             <div class="swiper-slide">
                                 <div class="cards__body">
                                     <div class="cards__img">
-                                        <img src="./img/logo.svg" alt="logo.svg">
+                                        <img src="./img/big_logo.svg" alt="logo.svg">
                                     </div>
                                     <h3 class="cards__title">Услуга 3 Услуга 3 Услуга 3</h3>
-                                    <span class="cards__descr">Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание</span>
+                                    <span class="cards__descr">Описание Описание Описание Описание Описание
+                                        ОписаниеОписание Описание Описание</span>
                                     <button href="#popup" class="page__btn popup-link">Модальное окно</button>
                                 </div>
                             </div>
-                            <!-- и так далее... -->
+                            <div class="swiper-slide">
+                                <div class="cards__body">
+                                    <div class="cards__img">
+                                        <img src="./img/big_logo.svg" alt="logo.svg">
+                                    </div>
+                                    <h3 class="cards__title">Услуга 1 Услуга 1</h3>
+                                    <span class="cards__descr">Описание Описание Описание Описание Описание
+                                        ОписаниеОписание Описание Описание</span>
+                                    <button href="#popup" class="page__btn popup-link">Модальное окно</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards__body">
+                                    <div class="cards__img">
+                                        <img src="./img/big_logo.svg" alt="logo.svg">
+                                    </div>
+                                    <h3 class="cards__title">Услуга 2 Услуга 2Услуга 2 Услуга 2 </h3>
+                                    <span class="cards__descr text">Описание Описание Описание Описание </span>
+                                    <button href="#popup" class="page__btn popup-link">Модальное окно</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards__body">
+                                    <div class="cards__img">
+                                        <img src="./img/big_logo.svg" alt="logo.svg">
+                                    </div>
+                                    <h3 class="cards__title">Услуга 3 Услуга 3 Услуга 3</h3>
+                                    <span class="cards__descr">Описание Описание Описание Описание Описание
+                                        ОписаниеОписание Описание Описание</span>
+                                    <button href="#popup" class="page__btn popup-link">Модальное окно</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards__body">
+                                    <div class="cards__img">
+                                        <img src="./img/big_logo.svg" alt="logo.svg">
+                                    </div>
+                                    <h3 class="cards__title">Услуга 1 Услуга 1</h3>
+                                    <span class="cards__descr">Описание Описание Описание Описание Описание
+                                        ОписаниеОписание Описание Описание</span>
+                                    <button href="#popup" class="page__btn popup-link">Модальное окно</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards__body">
+                                    <div class="cards__img">
+                                        <img src="./img/big_logo.svg" alt="logo.svg">
+                                    </div>
+                                    <h3 class="cards__title">Услуга 2 Услуга 2Услуга 2 Услуга 2 </h3>
+                                    <span class="cards__descr text">Описание Описание Описание Описание </span>
+                                    <button href="#popup" class="page__btn popup-link">Модальное окно</button>
+                                </div>
+                            </div>
                         </div>
-                        <!-- Добавляем, если нам нужны стрелки управления -->
-
+                        <div class="slider__button_custom swiper-button-prev"></div>
+                        <div class="slider__button_custom swiper-button-next"></div>
                     </div>
                 </div>
             </section>
@@ -158,20 +206,32 @@
                 </form>
             </section>
             <!-- Список -->
-            <section class="list__body page__section_list">
+            <section class="accordeon list__body page__section_list">
                 <h2 class="page__sub-title">Форма</h2>
                 <ul class="list__list">
                     <li class="list__item">
                         <h3 class="List__title">Список 1</h3>
-                        <span class="text">Тут как с водопроводом: количество потребляемой воды на квартиру зависит от количества людей и их потребностей.<br>Внимание! Роутер можно взять в аренду, но в этом случае к вам может попасть устаревшее или даже неисправное оборудование, что может сказаться на качестве услуг и нашей репутации. Так же вы можете воспользоваться беспроцентной рассрочкой.</span>
+                        <span class="text">Тут как с водопроводом: количество потребляемой воды на квартиру зависит от
+                            количества людей и их потребностей.<br>Внимание! Роутер можно взять в аренду, но в этом
+                            случае к вам может попасть устаревшее или даже неисправное оборудование, что может сказаться
+                            на качестве услуг и нашей репутации. Так же вы можете воспользоваться беспроцентной
+                            рассрочкой.</span>
                     </li>
                     <li class="list__item">
                         <h3 class="List__title">Список 2</h3>
-                        <span class="text">Тут как с водопроводом: количество потребляемой воды на квартиру зависит от количества людей и их потребностей.<br>Внимание! Роутер можно взять в аренду, но в этом случае к вам может попасть устаревшее или даже неисправное оборудование, что может сказаться на качестве услуг и нашей репутации. Так же вы можете воспользоваться беспроцентной рассрочкой.</span>
+                        <span class="text">Тут как с водопроводом: количество потребляемой воды на квартиру зависит от
+                            количества людей и их потребностей.<br>Внимание! Роутер можно взять в аренду, но в этом
+                            случае к вам может попасть устаревшее или даже неисправное оборудование, что может сказаться
+                            на качестве услуг и нашей репутации. Так же вы можете воспользоваться беспроцентной
+                            рассрочкой.</span>
                     </li>
                     <li class="list__item">
                         <h3 class="List__title">Список 3</h3>
-                        <span class="text">Тут как с водопроводом: количество потребляемой воды на квартиру зависит от количества людей и их потребностей.<br>Внимание! Роутер можно взять в аренду, но в этом случае к вам может попасть устаревшее или даже неисправное оборудование, что может сказаться на качестве услуг и нашей репутации. Так же вы можете воспользоваться беспроцентной рассрочкой.</span>
+                        <span class="text">Тут как с водопроводом: количество потребляемой воды на квартиру зависит от
+                            количества людей и их потребностей.<br>Внимание! Роутер можно взять в аренду, но в этом
+                            случае к вам может попасть устаревшее или даже неисправное оборудование, что может сказаться
+                            на качестве услуг и нашей репутации. Так же вы можете воспользоваться беспроцентной
+                            рассрочкой.</span>
                     </li>
                 </ul>
             </section>

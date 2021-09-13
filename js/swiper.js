@@ -5,12 +5,6 @@ const swiper1 = new Swiper('.image-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    // Скролл
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    //     // Возможность перетаскивать скролл
-    //     draggable: true
-    // },
     centeredSlides: true,
     // loop: true,
 
@@ -20,28 +14,22 @@ const swiper1 = new Swiper('.image-slider', {
     // }
 });
 
-// export var swiper2 = new Swiper('.image-slider-cards', {
-//     // Стрелки
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev'
-//     },
-//     // Скролл
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//         // Возможность перетаскивать скролл
-//         draggable: true
-//     },
-//     breakpoints: {
-//         375: {
-//             slidesPerView: 1,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//         },
-//         1024: {
-//             slidesPerView: 3,
-//         },
+const swiper2 = new Swiper('.cards-slider', {
+    // Стрелки
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+        375: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
 
-//     },
-// });
+    },
+});
